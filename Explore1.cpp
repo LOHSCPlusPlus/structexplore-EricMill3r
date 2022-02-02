@@ -16,8 +16,8 @@ int main() {
     b.y = 7.8;
 
     Point c;
-    c.x = 69.420
-    c.y = 420.69
+    c.x = 69.420;
+    c.y = 420.69;
 
     cout << "Point a: x = " << a.x << ", y = " << a.y << endl;
     cout << "Point b: x = " << b.x << ", y = " << b.y << endl;
