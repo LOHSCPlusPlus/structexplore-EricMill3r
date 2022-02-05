@@ -18,17 +18,18 @@ Point::Point(string x, string y) {
 	secondName = y;
 }
 
-void PrintPerson(string Person){
+void PrintPerson(Point Person){
 
 
-cout << "Point Person: firstName = " << Person << ", secondName = " << Person<< endl;
+cout << "Point Person: firstName = " << Person.firstName << ", secondName = " << Person.secondName  << endl;
 }
 
 int main() {
 	
   Point Person;
+  Person.firstName = "Eric";
+  Person.secondName = "Miller";
 
-
-  void PrintPerson(string Person);
+  PrintPerson(Point Person);
 	return 0;
 }
