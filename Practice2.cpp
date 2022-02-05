@@ -2,10 +2,15 @@
 using namespace std;
 
 struct Point {
-    string firstName;
-    string secondName;
+  string firstName;
+  string secondName;
+  Point();
 };
-
+Point::Point() {
+	// Normally, you do not print in a constructor
+	firstName = "unknown";
+	secondName = "unknown";
+}
 
 
 
@@ -14,12 +19,8 @@ struct Point {
 int main() {
 	
   Point a; 
-  a.firstName = "unknown";
-  a.secondName = "unknown";
-
   Point b; 
-  b.firstName = "unknown";
-  b.secondName = "unknown";
+  
 
   cout << "Point a: firstName = " << a.firstName << ", secondName = " << a.secondName  << endl;
   cout << "Point b: firstName= " << b.firstName << ", secondName = " << b. secondName << endl;
